@@ -10,10 +10,10 @@ module.exports = {
       jsOutput: path.join('web', 'index.js')
     }
   },
-  eslint: true,
+  eslint: false,
   compilers: {
     less: {
-      compress: true
+      compress: false
     },
     /*sass: {
       outputStyle: 'compressed'
@@ -42,7 +42,7 @@ if (prod) {
   // module.exports.compilers['sass'] = {outputStyle: 'compressed'}
 
   // 压缩less
-  module.exports.compilers['less'] = {compress: true}
+  module.exports.compilers['less'] = {compress: ture}
 
   // 压缩js
   module.exports.plugins = {
